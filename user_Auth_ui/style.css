@@ -1,0 +1,14 @@
+.container{
+    /* Add some styling to the form itself for better visibility */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center; /* To center inline content like text and buttons inside the form */
+    background-color: azure;
+}
+
+body{
+    background-color: #f0f0f0;
+}
