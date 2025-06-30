@@ -45,4 +45,16 @@ public class AuthController {
             return new ResponseEntity<>("Password or email wrong", HttpStatus.BAD_REQUEST);
         }
     }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?>deleteUser(@PathVariable Long id){
+        boolean valid = userService.deleteUser(id);
+
+        if(valid){
+            return ResponseEntity.ok("Successfully deleted");
+        }
+        else{
+            return new ResponseEntity<>("User Not Found",HttpStatus.NOT_FOUND);
+        }
+    }
 }
